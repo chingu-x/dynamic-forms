@@ -2,7 +2,7 @@
   "name": "@chingu-labs/dynamic-forms",
   "version": "0.0.1",
   "description": "React Dynamic Forms",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chingu-x/dynamic-forms.git"
@@ -21,12 +21,19 @@
   "homepage": "https://github.com/chingu-x/dynamic-forms#readme",
   "dependencies": {
     "lodash": "^4.17.11",
+    "prop-types": "^15.7.2",
+    "react": "^16.4.0",
+    "react-dom": "^16.8.3",
+    "react-select": "^2.4.1",
     "validator": "^10.11.0"
   },
-  "peerDependencies": {
-    "react": ">=16.4.0"
-  },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.3.4"
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir dist"
   }
 }
