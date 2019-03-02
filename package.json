@@ -1,0 +1,36 @@
+{
+  "name": "dynamic-forms",
+  "version": "0.0.1",
+  "description": "React Dynamic Forms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chingu-x/dynamic-forms.git"
+  },
+  "keywords": [
+    "react",
+    "dynamic",
+    "forms",
+    "forms",
+    "form",
+    "builder",
+    "form",
+    "components",
+    "dynamic"
+  ],
+  "author": "Vampiire and Serpient",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chingu-x/dynamic-forms/issues"
+  },
+  "homepage": "https://github.com/chingu-x/dynamic-forms#readme",
+  "peerDependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "react": "^16.8.3",
+    "validator": "^10.11.0"
+  }
+}
