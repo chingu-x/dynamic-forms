@@ -18,7 +18,7 @@ import { isFieldInvalid, isEmpty } from "./utilities";
  * @prop {func} onInputChange observation-only handler with args (field_name, value, form_data)
  * @prop {func} customComponents custom input_type components (merged with defaults, precedence to custom components)
  */
-class DynamicFormContainer extends React.Component {
+class DynamicForm extends React.Component {
   state = {
     form_data: {}, // { field_name: user response(s) }
     questions: [], // detailed in prop types
@@ -337,7 +337,7 @@ const questionShape = {
   maxlength: PropTypes.number, // max length or number of choices
 };
 
-DynamicFormContainer.propTypes = {
+DynamicForm.propTypes = {
   purpose: PropTypes.string, // used for labeling persisted form data
   questions: PropTypes.arrayOf(PropTypes.shape(questionShape)),
   customComponents: PropTypes.func, // custom input_type components
@@ -349,4 +349,4 @@ DynamicFormContainer.propTypes = {
   onInputChange: PropTypes.func, // optional observation-only handler for viewing form data on change
 };
 
-export default DynamicFormContainer;
+export default DynamicForm;
