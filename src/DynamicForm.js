@@ -5,9 +5,8 @@ import { isEqual, isEmpty } from "lodash";
 import { formBuilder } from "./form-builder";
 import { isFieldInvalid } from "./validators";
 /**
- * @prop {array} questions array of Question data objects for rendering
  * @prop {string} purpose Dynamic Form collection name (for form data persistence)
- * @prop {array} questions array of Dynamic Question objects
+ * @prop {array} questions array of Dynamic Question data objects for rendering Question Components
  * 
  * -- OPTIONAL --
  * @prop {object} initialData CAUTION: very delicate - must match expected shape EXACTLY. Provide initial form_data. 
@@ -16,7 +15,7 @@ import { isFieldInvalid } from "./validators";
  * @prop {func} onSubmit wrapper callback for handling submit behavior
  * @prop {func} onValidate callback for field level control of 'disabled' flag. expects boolean return
  * @prop {func} onInputChange observation-only handler with args (field_name, value, form_data)
- * @prop {func} customComponents custom input_type components (merged with defaults, precedence to custom components)
+ * @prop {object} customComponents custom input_type components (merged with defaults, precedence to custom components)
  */
 class DynamicForm extends React.Component {
   state = {
