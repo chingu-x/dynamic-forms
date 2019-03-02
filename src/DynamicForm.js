@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { isEqual } from "lodash";
+import { isEqual, isEmpty } from "lodash";
 
-import { dynamicFormMaker } from "./DynamicFormMaker";
-import { isFieldInvalid, isEmpty } from "./utilities";
+import { formBuilder } from "./form-builder";
+import { isFieldInvalid } from "./validators";
 /**
  * @prop {array} questions array of Question data objects for rendering
  * @prop {string} purpose Dynamic Form collection name (for form data persistence)
@@ -263,10 +263,10 @@ class DynamicForm extends React.Component {
   }
 
   /**
-   * calls DynamicFormMaker()
+   * calls formBuilder()
    * - creates form Question components for each 'question'
    */
-  renderInputs = () => dynamicFormMaker(
+  renderInputs = () => formBuilder(
     this.state.questions,
     this.state.form_data,
     this._handleInputChange,

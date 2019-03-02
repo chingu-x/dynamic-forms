@@ -1,7 +1,7 @@
 import React from "react";
-import questionComponents from "./QuestionComponents";
+import questionComponents from "./question-components";
 
-const dynamicFormMaker = (
+const formBuilder = (
   questions,
   form_data,
   onFormChange,
@@ -39,6 +39,6 @@ const dynamicFormMaker = (
 );
 
 export {
-  dynamicFormMaker,
+  formBuilder,
   questionComponents,
 };

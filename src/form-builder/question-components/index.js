@@ -4,10 +4,7 @@ import dropdown from "./dropdown";
 import radio from "./radio";
 import text from "./text";
 import textarea from "./textarea";
-import team_progress_sentiment_buttons from "./team_progress_sentiment_buttons.jsx";
-import voyage_application_tier_select from "./voyage_application_tier_select";
 import three_buttons from './three_buttons';
-import skill_setter from './SkillSetter';
 import multiple_text_input from './multiple_text_input';
 
 export default {
@@ -17,10 +14,6 @@ export default {
   radio,
   text,
   textarea,
-// -- CUSTOM -- //
-  voyage_application_tier_select,
-  team_progress_sentiment_buttons,
   three_buttons,
-  skill_setter,
   multiple_text_input
 };

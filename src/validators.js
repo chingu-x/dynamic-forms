@@ -44,6 +44,5 @@ const isFieldInvalid = (type, value, min, max) => {
 }
 
 export {
-  isEmpty,
   isFieldInvalid,
 };
