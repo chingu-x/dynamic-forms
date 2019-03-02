@@ -2,9 +2,7 @@
   "name": "@chingu-labs/dynamic-forms",
   "version": "0.0.1",
   "description": "React Dynamic Forms",
-  "main": "index.js",
-  "scripts": {
-  },
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chingu-x/dynamic-forms.git"
@@ -26,9 +24,11 @@
     "url": "https://github.com/chingu-x/dynamic-forms/issues"
   },
   "homepage": "https://github.com/chingu-x/dynamic-forms#readme",
-  "peerDependencies": {
+  "dependencies": {
     "lodash": "^4.17.11",
-    "react": "^16.8.3",
     "validator": "^10.11.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.4.0"
   }
 }
